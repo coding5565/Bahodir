@@ -88,6 +88,7 @@ body::after {
   align-items: center;
   justify-content: center;
   gap: 60px;
+  padding: 80px 40px 40px; /* Increased top padding to lower elements */
 }
 
 .hero-content {
@@ -184,6 +185,7 @@ body::after {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 20%;
   filter: contrast(1.1) brightness(1.1);
 }
 
@@ -283,7 +285,7 @@ body::after {
   .hero .container {
     flex-direction: column;
     gap: 15px;
-    padding: 20px;
+    padding: 60px 20px 20px; /* Increased top padding for mobile */
     align-items: center;
     justify-content: center;
   }
