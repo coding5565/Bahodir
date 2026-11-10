@@ -1,70 +1,347 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" class="no-js" data-page="home">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahodir Raxmatov</title>
-    <link rel="icon" type="Image/png" href="logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Raxmatov Bahodirjon — Brand Identity &amp; Logo Designer</title>
+    <meta name="description" content="Raxmatov Bahodirjon is a graphic designer from Uzbekistan creating logos and brand identities. See selected work and get in touch on Telegram.">
+    <meta name="theme-color" content="#0B0A09">
+    <meta name="color-scheme" content="dark">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Raxmatov Bahodirjon — Brand Identity &amp; Logo Designer">
+    <meta property="og:description" content="Logos and brand identities that make businesses recognisable at first glance.">
+    <meta property="og:image" content="assets/img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <script>
+        (function (d, w) {
+            var r = d.documentElement, s = null, l = null;
+            r.classList.remove('no-js');
+            r.classList.add('js');
+            try { l = localStorage.getItem('br-lang'); } catch (e) { }
+            var q = /[?&]lang=(en|uz)\b/.exec(w.location.search);
+            if (q) { l = q[1]; try { localStorage.setItem('br-lang', l); } catch (e) { } }
+            if (!l) l = (navigator.languages || [navigator.language || '']).some(function (x) { return /^uz/i.test(x); }) ? 'uz' : 'en';
+            r.lang = l === 'uz' ? 'uz' : 'en';
+            if (w.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            try { s = w.sessionStorage; } catch (e) { }
+            if (s && s.getItem('br-pt')) r.classList.add('pt-enter');
+            else if (!s || !s.getItem('br-loaded')) r.classList.add('is-loading');
+            w.setTimeout(function () {
+                if (!w.__brReady) r.classList.remove('js', 'is-loading', 'pt-enter');
+            }, 5000);
+        })(document, window);
+    </script>
+
+    <link rel="preload" href="assets/fonts/syne-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/img/portrait-512.webp" imagesrcset="assets/img/portrait-384.webp 384w, assets/img/portrait-512.webp 512w" imagesizes="(max-width: 860px) 42vw, 26vw" type="image/webp">
+    <link rel="stylesheet" href="assets/vendor/lenis.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Raxmatov Bahodirjon",
+        "jobTitle": "Brand Identity & Logo Designer",
+        "address": { "@type": "PostalAddress", "addressCountry": "UZ" },
+        "sameAs": [
+            "https://t.me/bakhodir_designs",
+            "https://www.instagram.com/im_rakhmatov",
+            "https://www.pinterest.com/bakhodir_designs/"
+        ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-    <main>
-        <section id="home" class="hero">
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <div class="preloader" aria-hidden="true">
+        <div class="preloader-mark"><span>R</span><span>B</span></div>
+        <div class="preloader-meta">
+            <span>Raxmatov Bahodirjon</span>
+            <span>Portfolio ©2026</span>
+        </div>
+        <div class="preloader-count"><span data-loader-count>0</span></div>
+        <div class="preloader-bar"></div>
+    </div>
+
+    <div class="page-transition" aria-hidden="true"><span class="page-transition-mark">RB</span></div>
+    <div class="cursor" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-intro>
+        <a class="brand" href="#top" aria-label="Raxmatov Bahodirjon — home" data-i18n-attr="aria-label:a11y.home">
+            <span class="brand-mark">RB</span>
+            <span class="brand-name">Raxmatov<br>Bahodirjon</span>
+        </a>
+
+        <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:a11y.mainNav">
+            <a href="#work" data-i18n="nav.work">Work</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#services" data-i18n="nav.services">Services</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+                <button type="button" data-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-lang="uz" aria-pressed="false">UZ</button>
+            </div>
+            <a class="btn btn-accent header-cta" href="https://t.me/bakhodir_designs" data-link="telegram" target="_blank" rel="noopener" data-magnetic>
+                <span data-i18n="header.cta">Let’s talk</span>
+            </a>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="menu-btn-label" data-i18n="menu.open">Menu</span>
+                <span class="menu-btn-icon" aria-hidden="true"><i></i><i></i></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" data-lenis-prevent>
+        <nav aria-label="Mobile" data-i18n-attr="aria-label:a11y.mobileNav">
+            <a href="#work"><small>01</small><span data-i18n="nav.work">Work</span></a>
+            <a href="#about"><small>02</small><span data-i18n="nav.about">About</span></a>
+            <a href="#services"><small>03</small><span data-i18n="nav.services">Services</span></a>
+            <a href="#contact"><small>04</small><span data-i18n="nav.contact">Contact</span></a>
+        </nav>
+        <div class="mobile-menu-foot">
+            <a class="btn btn-accent mobile-menu-cta" href="https://t.me/bakhodir_designs" data-link="telegram" target="_blank" rel="noopener">
+                <span data-i18n="contact.cta">Write on Telegram</span>
+                <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+            <div class="mobile-menu-social">
+                <a href="https://t.me/bakhodir_designs" data-link="telegram" target="_blank" rel="noopener">Telegram</a>
+                <a href="https://www.instagram.com/im_rakhmatov" data-link="instagram" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.pinterest.com/bakhodir_designs/" data-link="pinterest" target="_blank" rel="noopener">Pinterest</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main" tabindex="-1">
+        <!-- HERO -->
+        <section class="hero" id="top" data-intro>
+            <div class="container hero-inner">
+                <div class="hero-top">
+                    <div class="hero-intro">
+                        <p class="eyebrow hero-role" data-i18n="hero.role">Brand identity &amp; logo designer</p>
+                        <h1 class="hero-name">
+                            <span class="line">Raxmatov</span>
+                            <span class="line">Bahodirjon</span>
+                        </h1>
+                        <p class="hero-lead" data-i18n="hero.intro">I design logos and brand identities that make businesses recognisable at first glance — clear ideas, crafted with care.</p>
+                        <p class="badge" data-available>
+                            <span class="badge-dot" aria-hidden="true"></span>
+                            <span data-i18n="hero.available">Available for new projects</span>
+                        </p>
+                    </div>
+                    <figure class="hero-portrait">
+                        <img src="assets/img/portrait-512.webp"
+                            srcset="assets/img/portrait-384.webp 384w, assets/img/portrait-512.webp 512w"
+                            sizes="(max-width: 860px) 42vw, 26vw" width="512" height="640"
+                            alt="Portrait of Raxmatov Bahodirjon" data-i18n-attr="alt:hero.portraitAlt" fetchpriority="high">
+                    </figure>
+                </div>
+
+                <div class="hero-bottom">
+                    <a class="scroll-cue" href="#work">
+                        <span class="scroll-cue-line" aria-hidden="true"></span>
+                        <span data-i18n="hero.scroll">Scroll</span>
+                    </a>
+                    <ul class="roles" aria-label="Disciplines" data-i18n-attr="aria-label:a11y.roles" data-roles>
+                        <li>Logo Design</li>
+                        <li>Brand Identity</li>
+                        <li>Visual Systems</li>
+                        <li>Typography</li>
+                    </ul>
+                    <p class="hero-location" data-i18n="hero.based">Based in Uzbekistan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track" data-marquee></div>
+        </div>
+
+        <!-- WORK -->
+        <section class="section work" id="work">
             <div class="container">
-                <div class="hero-visual">
-                    <div class="avatar-container">
-                        <div class="sun-core">
-                            <img src="boho.png" alt="Sun Image">
-                        </div>
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow" data-i18n="work.eyebrow">Portfolio</p>
+                        <h2 class="section-title" data-split data-i18n-html="work.title">Selected <em>work</em></h2>
+                    </div>
+                    <div class="section-head-side">
+                        <span class="work-count" data-works-count>06</span>
+                        <p class="section-lead" data-fade data-i18n="work.lead">A selection of logos and identity systems — each one built around a clear idea.</p>
                     </div>
                 </div>
-                <div class="hero-content">
-                    <div class="float-wrapper">
-                        <div class="main-info">
-                            <p class="greeting">Bahodir Rakhmatov</p>
-                            <h1 class="hero-title">
-                                <span id="typing-text">Graphic Designer</span>
-                                <span class="cursor">|</span>
-                            </h1>
 
-                            <div class="social-links">
-                                <a href="https://www.instagram.com/im_rakhmatov?igsh=Y3praDYzbTF2cjY3&utm_source=qr"
-                                    class="social-link" aria-label="Instagram" target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                                    </svg>
-                                </a>
-                                <a href="https://t.me/bakhodir_designs" class="social-link" aria-label="Telegram"
-                                    target="_blank">
-                                    <svg style="margin-right: 1px;" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="currentColor">
-                                        <path
-                                            d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 1.589 4.826c.19.524.097.731.654.731.43 0 .621-.197.861-.43l2.308-2.242 4.803 3.548c.883.487 1.517.236 1.737-.812l3.148-14.836c.322-1.29-.489-1.874-1.332-1.493z" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.pinterest.com/bakhodir_designs/" class="social-link"
-                                    aria-label="Pinterest" target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.966 1.406-5.966s-.359-.72-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.16-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.258 7.929-7.258 4.161 0 7.394 2.965 7.394 6.93 0 4.135-2.607 7.462-6.223 7.462-1.215 0-2.358-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.607 0 11.985-5.365 11.985-11.987C24.021 5.367 18.624 0 12.017 0z" />
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="works-grid" data-works></div>
+                <div class="works-progress" aria-hidden="true"><span class="works-progress-bar" data-works-progress></span></div>
+
+                <div class="work-more" data-fade>
+                    <a class="btn btn-outline" href="https://www.pinterest.com/bakhodir_designs/" data-link="pinterest" target="_blank" rel="noopener" data-magnetic>
+                        <span data-i18n="work.more">More work on Pinterest</span>
+                        <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-side">
+                        <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+                        <h2 class="section-title" data-split data-i18n-html="about.title">About <em>me</em></h2>
+                    </div>
+                    <div class="about-main">
+                        <p class="about-statement" data-scrub-words data-i18n="about.statement">I’m Bahodirjon — a graphic designer from Uzbekistan who turns ideas into clear, memorable brands. I believe every line in a logo should have a reason to be there.</p>
+                        <div class="about-text">
+                            <p data-fade data-i18n="about.text1">My work starts with understanding the business: who it speaks to, what makes it different and where the brand will live. Then I sketch, test and refine until the idea is simple enough to remember.</p>
+                            <p data-fade data-i18n="about.text2">The result is more than a logo — it is a complete visual language: colour, typography and rules that keep the brand consistent everywhere.</p>
                         </div>
+                        <dl class="stats" data-stats hidden></dl>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- SERVICES -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow" data-i18n="services.eyebrow">Services</p>
+                        <h2 class="section-title" data-split data-i18n-html="services.title">What I <em>do</em></h2>
+                    </div>
+                </div>
+
+                <ol class="services-list">
+                    <li class="service">
+                        <span class="service-line" aria-hidden="true"></span>
+                        <span class="service-num">01</span>
+                        <h3 class="service-title" data-i18n="services.1.title">Logo Design</h3>
+                        <p class="service-text" data-i18n="services.1.text">A distinctive mark built on research, sketching and careful refinement.</p>
+                    </li>
+                    <li class="service">
+                        <span class="service-line" aria-hidden="true"></span>
+                        <span class="service-num">02</span>
+                        <h3 class="service-title" data-i18n="services.2.title">Brand Identity</h3>
+                        <p class="service-text" data-i18n="services.2.text">A complete visual system: logo, colour palette, typography, patterns and brand guidelines.</p>
+                    </li>
+                    <li class="service">
+                        <span class="service-line" aria-hidden="true"></span>
+                        <span class="service-num">03</span>
+                        <h3 class="service-title" data-i18n="services.3.title">Brand Applications</h3>
+                        <p class="service-text" data-i18n="services.3.text">Business cards, packaging, signage and social media templates that keep the brand consistent.</p>
+                    </li>
+                    <li class="service">
+                        <span class="service-line" aria-hidden="true"></span>
+                        <span class="service-num">04</span>
+                        <h3 class="service-title" data-i18n="services.4.title">Rebranding</h3>
+                        <p class="service-text" data-i18n="services.4.text">Refreshing an existing brand without losing the recognition it has already earned.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="section process" id="process">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow" data-i18n="process.eyebrow">Process</p>
+                        <h2 class="section-title" data-split data-i18n-html="process.title">How I <em>work</em></h2>
+                    </div>
+                </div>
+
+                <ol class="process-grid" data-stagger>
+                    <li class="step">
+                        <span class="step-num">01</span>
+                        <h3 class="step-title" data-i18n="process.1.title">Brief &amp; research</h3>
+                        <p class="step-text" data-i18n="process.1.text">We talk about your business, audience and goals. I study the market and your competitors.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-num">02</span>
+                        <h3 class="step-title" data-i18n="process.2.title">Concepts</h3>
+                        <p class="step-text" data-i18n="process.2.text">I explore directions through sketches and present the strongest ideas with the reasoning behind them.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-num">03</span>
+                        <h3 class="step-title" data-i18n="process.3.title">Refinement</h3>
+                        <p class="step-text" data-i18n="process.3.text">We choose one direction and polish every detail: shape, colour and typography.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-num">04</span>
+                        <h3 class="step-title" data-i18n="process.4.title">Delivery</h3>
+                        <p class="step-text" data-i18n="process.4.text">You receive every file in the formats you need, plus simple guidelines for using them.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="container contact-inner">
+                <p class="eyebrow eyebrow-center" data-i18n="contact.eyebrow">Let’s work together</p>
+                <h2 class="contact-title" data-split data-i18n-html="contact.title">Have a project <em>in mind?</em></h2>
+                <a class="contact-cta" href="https://t.me/bakhodir_designs" data-link="telegram" target="_blank" rel="noopener" data-magnetic="0.4">
+                    <span data-i18n="contact.cta">Write on Telegram</span>
+                    <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                </a>
+                <p class="contact-text" data-fade data-i18n="contact.text">Tell me about your business and your idea — I’ll get back to you as soon as I can.</p>
+                <ul class="socials" data-stagger>
+                    <li>
+                        <a class="social" href="https://t.me/bakhodir_designs" data-link="telegram" target="_blank" rel="noopener" data-magnetic>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 1.589 4.826c.19.524.097.731.654.731.43 0 .621-.197.861-.43l2.308-2.242 4.803 3.548c.883.487 1.517.236 1.737-.812l3.148-14.836c.322-1.29-.489-1.874-1.332-1.493z" /></svg>
+                            <span>Telegram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social" href="https://www.instagram.com/im_rakhmatov" data-link="instagram" target="_blank" rel="noopener" data-magnetic>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" /></svg>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social" href="https://www.pinterest.com/bakhodir_designs/" data-link="pinterest" target="_blank" rel="noopener" data-magnetic>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.966 1.406-5.966s-.359-.72-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.16-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.258 7.929-7.258 4.161 0 7.394 2.965 7.394 6.93 0 4.135-2.607 7.462-6.223 7.462-1.215 0-2.358-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.607 0 11.985-5.365 11.985-11.987C24.021 5.367 18.624 0 12.017 0z" /></svg>
+                            <span>Pinterest</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span data-year>2026</span> Raxmatov Bahodirjon</p>
+            <p class="footer-time"><span data-i18n="footer.time">Local time</span> <span data-clock>--:--</span></p>
+            <a class="footer-top" href="#top" data-i18n="footer.top">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/gsap.min.js" defer></script>
+    <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/vendor/SplitText.min.js" defer></script>
+    <script src="assets/vendor/CustomEase.min.js" defer></script>
+    <script src="assets/vendor/lenis.min.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
